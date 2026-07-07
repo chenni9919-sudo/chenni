@@ -36,7 +36,7 @@ if [[ "${NODE_MAJOR}" -lt 18 ]]; then
 fi
 
 echo "==> Installing Kling CLI (${SITE_LABEL})"
-npm install -g "${CLI_PACKAGE}@latest" --registry=https://registry.npmjs.org
+npm install -g "${CLI_PACKAGE}@latest" --registry=https://registry.npmjs.org --force
 
 echo "==> Writing Cursor MCP config: ${MCP_CONFIG_FILE}"
 mkdir -p "${MCP_CONFIG_DIR}"
